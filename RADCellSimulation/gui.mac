@@ -1,0 +1,43 @@
+#
+#  This file permits to customize, with commands,
+# the menu bar of the G4UIXm, G4UIQt, G4UIWin32 sessions.
+# It has no effect with G4UIterminal.
+#
+
+# File :
+/gui/addMenu g4file G4File
+/gui/addButton g4file Exit "exit"
+#
+
+#icons
+/gui/addIcon "Open MAC file" open /control/execute
+#
+
+# Run menu :
+#/gui/addMenu run Run
+#/gui/addButton run run "/control/execute beam.in"
+#/gui/addButton run beamOn "/run/beamOn 0"
+#
+
+/control/verbose 0
+/tracking/verbose 0
+/gps/verbose 2
+/gps/particle e-
+/gps/pos/type Plane
+/gps/pos/shape Square
+/gps/pos/centre 0 0 0.04 cm
+/gps/pos/halfx 0.055 cm
+/gps/pos/halfy 0.055 cm
+/gps/ang/rot2 0 0 -1
+/gps/ene/mono 10 keV
+/run/beamOn 1
+
+# Viewer menu :
+/gui/addMenu viewer Viewer
+/gui/addButton viewer "Set style surface" "/vis/viewer/set/style surface"
+/gui/addButton viewer "Set style wireframe" "/vis/viewer/set/style wire"
+/gui/addButton viewer "Refresh viewer" "/vis/viewer/refresh"
+/gui/addButton viewer "Update viewer (interaction or end-of-file)" "/vis/viewer/update"
+/gui/addButton viewer "Flush viewer (= refresh + update)" "/vis/viewer/flush"
+/gui/addButton viewer "Update scene" "/vis/scene/notifyHandlers"
+#
