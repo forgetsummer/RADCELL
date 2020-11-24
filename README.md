@@ -7,6 +7,7 @@ During the radiation transport simulation, the energy deposition information in 
 **RADCellSimulation**
 
 The RADCellSimulation is the class used to control the whole process of radiation transport simulation of cell. It takes care of building the geometry of cell culture, cell visualization, radiation track structure visualization, cell geometry update, etc. The CreateCell() method is used to create a cell line. The SetCellWorld() method is used to build cell culture geometry. These methods are used in the initial phase when we describe cell and tissue geometry in the Geant4 simulation. The UpdateGeometryInitialize() method and UpdateGeometryFinalize() methods are used to update the cell geometry since the cell geometry may change due to cell proliferation or cell death. The EnergyDistributionCalculation() method is used to invoke the Geant4 transport kernel to implement the radiation transport simulation of cells.
+
 **Cell**
 
 The Cell class is used to describe one type of cell line. Some attributes are used to describe the characteristics of cell. For instance, cellType indicates the type of cell, cellOrganelle is a vector that stores the cell organelles, and cellShape indicates the shape of cell. The CellConstruct() method is used to construct a cell line. This class is not to be confused with CompuCell3D CellG class.  RADCELL’s Cell class is a representation of the CellG class in the RADCELL module, and thus every CellG CompuCell3D object will have matching RADCELL Cell object. 
