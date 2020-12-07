@@ -41,11 +41,11 @@ EventDNADamagesTallyInfo G4EventDNADamageAnalysis::EventDNADamageTally(EnergyDep
   
         for (EventEdepMap::iterator mitr_event=edepMap.begin();mitr_event!=edepMap.end();mitr_event++)
         {
-            if (mitr_event->first==0) // print the edep  point information of first event in cell nucleus
+            if (mitr_event->first==0)
             {
                 ofstream file;
 
-                file.open("eventID_0_edepInfoInNucleus.csv");
+                file.open("fromG4DataProcess_first.csv");
                 for (CellEdepMap::iterator mitr_cell=mitr_event->second.begin();mitr_cell!=mitr_event->second.end();mitr_cell++)
                 {
                     for (int i=0;i<mitr_cell->second.size();i++)

@@ -37,6 +37,7 @@ SET(LIBS
    G4track 
    G4visXXX
    G4error_propagation
+   G4geomUSolids
    G4graphics_reps  
    G4modeling   
    G4persistency   

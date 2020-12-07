@@ -1,0 +1,25 @@
+import numpy as np 
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+import numpy as np
+from scipy.optimize import curve_fit
+mpl.rc("font", family="Times New Roman"); plt.rcParams.update({'mathtext.default':  'regular' })
+
+data = np.genfromtxt('IL12_dose_profile.csv', delimiter=',',skip_header=1)
+
+dose=data[:,0]
+concentration_per_ml=data[:,1]
+
+print 'the dose is ',dose
+
+
+
+plt.plot(dose,concentration_per_ml,'b-o',linewidth=2,markersize=10,label='experimental data')
+plt.xscale('log')
+plt.tick_params(axis='x', labelsize=15)
+plt.tick_params(axis='y', labelsize=15)
+plt.xlabel('Whole boday dose to mouse,Gy',fontsize=15)
+plt.ylabel('IL12 concentration, pg/ml',fontsize=15)
+
+plt.show()

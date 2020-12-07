@@ -40,7 +40,7 @@ void EventAction::EndOfEventAction(const G4Event* event)
 {
     cout<<"Now the processing event ID is: "<<event->GetEventID()<<endl;
     
-    if (event->GetEventID()==5)
+    if (event->GetEventID()==0)
     {
             G4String filename = "FromEventRunAction.csv";
     ofstream file1;
