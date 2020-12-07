@@ -1,0 +1,49 @@
+/control/verbose 0 
+/tracking/verbose 0 
+/gps/verbose 0 
+/gps/source/intensity 1
+/gps/particle e-
+/gps/pos/type Plane 
+/gps/pos/shape Square 
+/gps/pos/centre 0 0 0.4 mm
+/gps/pos/halfx 0.25 mm
+/gps/pos/halfy 0.025 mm
+/gps/ang/rot2 0 0 -1 
+/gps/ene/mono 1000 keV
+/gps/source/add 1
+/gps/particle e-
+/gps/pos/type Plane 
+/gps/pos/shape Square 
+/gps/pos/centre 0 0.1 0.4 mm
+/gps/pos/halfx 0.25 mm
+/gps/pos/halfy 0.025 mm
+/gps/ang/rot2 0 0 -1 
+/gps/ene/mono 1000 keV
+/gps/source/add 1
+/gps/particle e-
+/gps/pos/type Plane 
+/gps/pos/shape Square 
+/gps/pos/centre 0 -0.1 0.4 mm
+/gps/pos/halfx 0.25 mm
+/gps/pos/halfy 0.025 mm
+/gps/ang/rot2 0 0 -1 
+/gps/ene/mono 1000 keV
+/gps/source/add 1
+/gps/particle e-
+/gps/pos/type Plane 
+/gps/pos/shape Square 
+/gps/pos/centre 0 -0.2 0.4 mm
+/gps/pos/halfx 0.25 mm
+/gps/pos/halfy 0.025 mm
+/gps/ang/rot2 0 0 -1 
+/gps/ene/mono 1000 keV
+/gps/source/add 1
+/gps/particle e-
+/gps/pos/type Plane 
+/gps/pos/shape Square 
+/gps/pos/centre 0 0.2 0.4 mm
+/gps/pos/halfx 0.25 mm
+/gps/pos/halfy 0.025 mm
+/gps/ang/rot2 0 0 -1 
+/gps/ene/mono 1000 keV
+/run/beamOn 1000 
