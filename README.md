@@ -50,3 +50,14 @@ We first instantiate RADCellSimulation object and this object’s methods to bui
  
 For radiation transport simulation of multicellular system, firstly, the computerized cells are created in the model, then conducting radiation transport calculation to obtain the simulation results, such as cellular dose and double-strand breaks. It is worth noting that the geometry in Geant4 should be updated if the multicellular system changed due to mitosis or cell death. 
 
+
+**About installation and using RADCELL**
+Currently, RADCELL only supports Linux system. 
+1. Install Geant4 in your local computer
+2. Compile RADCellSimulation using Geant4
+3. After installing RADCellSimulation, add the PYTHONPATH and LD_LIBRARY_PATH for RADCELL in bashrc file.
+   export PYTHONPATH=<path of RADCELL installation>/bin:$PYTHONPATH 
+   export LD_LIBRARY_PATH=<path of RADCELL installation>/bin:$LD_LIBRARY_PATH 
+ 4. After setting up the environemtnal variable as step 3, run demo_usingRADCELL.py, to see whether RADCELL path is set up correctly
+ 5. Install CompuCell3D in your local computer (https://compucell3d.org/)
+ 6. For runnig the example of simulating vascular tumor reponse,  in CompuCell3D, open project VascularTumor. Simply open file VascularTumor.cc3d. Then run the model.
