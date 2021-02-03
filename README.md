@@ -63,7 +63,7 @@ Currently, RADCELL only supports Linux system.
  6. For runnig the example of simulating vascular tumor reponse,  in CompuCell3D, open project VascularTumor. Simply open file VascularTumor.cc3d. Then run the model.
  
  
- **Citing RADCELL **
+ **Citing RADCELL**
  
 RADCELL is described in a technical paper, available in https://iopscience.iop.org/article/10.1088/1361-6560/abd4f9. If you would like the cite the article, you may use the following citation:
 
