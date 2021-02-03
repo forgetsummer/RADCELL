@@ -61,3 +61,12 @@ Currently, RADCELL only supports Linux system.
  4. After setting up the environemtnal variable as step 3, run demo_usingRADCELL.py, to see whether RADCELL path is set up correctly
  5. Install CompuCell3D in your local computer (https://compucell3d.org/)
  6. For runnig the example of simulating vascular tumor reponse,  in CompuCell3D, open project VascularTumor. Simply open file VascularTumor.cc3d. Then run the model.
+ 
+ 
+ **Citing RADCELL **
+ 
+RADCELL is described in a technical paper, available in https://iopscience.iop.org/article/10.1088/1361-6560/abd4f9. If you would like the cite the article, you may use the following citation:
+
+Liu R, Higley KA, Swat MH, Chaplain M, Powathil G, Glazier JA. Development of a coupled simulation toolkit for computational radiation biology based on Geant4 and CompuCell3D. Phys Med Biol. 2020 Dec 18. doi: 10.1088/1361-6560/abd4f9. Epub ahead of print. PMID: 33339019.
+
+
